@@ -21,7 +21,7 @@ public class MicBehavior : MonoBehaviour {
 		spectrum = new float[qSamples];
 		samples = new float[qSamples];
 		audio = GetComponent<AudioSource>();
-		audio.clip = Microphone.Start(null, true, 10, 44100);
+		audio.clip = Microphone.Start(null, true, 1, 44100);
 		audio.loop = true;
 		audio.Play();
 		fSample = AudioSettings.outputSampleRate;
